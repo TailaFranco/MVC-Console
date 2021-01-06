@@ -1,4 +1,6 @@
 ﻿using System;
+using MVC.Controllers;
+using MVC.Models;
 
 namespace MVC
 {
@@ -6,9 +8,9 @@ namespace MVC
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
-            Console.WriteLine($"Text");
-            Console.ReadLine();
+            //Instanciamos nosso controller 
+            ProdutoController produtoController = new ProdutoController();
+            produtoController.MostrarProdutos();
             
             
         }
